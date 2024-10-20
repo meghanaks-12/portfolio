@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meghana KS - Professional Portfolio</title>
+    
+    <!-- Linking the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <h1>Hi, I'm Meghana KS</h1>
+            <!-- Profile Photo with Circular Frame -->
+            <div class="profile-photo-container">
+                <img src="portfolio image1.jpg" alt="Meghana K S" class="profile-photo">
+            </div>
+            <p>Welcome to my portfolio!<br></p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am an MCA graduate with a deep interest in AI and Machine Learning. I have worked on projects involving mental health support chatbot using IBM watsonX Assistant and handwriting recognition systems.
+            My passion lies in solving real-world challenges using cutting-edge technologies.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        
+        <!-- Project 1: Malayalam Handwritten Character Recognition -->
+        <div class="project">
+            <h3>Project 1: Malayalam Handwritten Character Recognition</h3>
+            <p>This project focuses on machine learning models designed to recognize handwritten Malayalam characters with high accuracy.</p>
+            <a href="#" target="_blank">View on GitHub</a>
+        </div>
+        
+        <!-- Project 2: AI-ML Chatbot for Mental Health Support -->
+        <div class="project">
+            <h3>Project 2: AI-ML Chatbot for Mental Health Support</h3>
+            <p>An intelligent chatbot providing support to individuals experiencing anxiety and depression, promoting mental well-being.</p>
+            <a href="https://cloud-object-storage-cos-static-web-hosting-v4p.s3.jp-tok.cloud-object-storage.appdomain.cloud/Wellness%20Whisper.html" target="_blank">Explore Wellness Whisper</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        
+        <!-- Contact Form -->
+        <form id="contactForm" onsubmit="submitForm(); return false;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="thankYouMessage" style="display: none;">Thank you for reaching out! I will get back to you shortly.</p>
+    </section>
+
+    <!-- Linking the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
